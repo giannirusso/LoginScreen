@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         mainImage.image = UIImage(named: "logo")
         mainImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            mainImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            mainImage.widthAnchor.constraint(equalToConstant: 268),
-            mainImage.heightAnchor.constraint(equalToConstant: 344),
+            mainImage.bottomAnchor.constraint(equalTo: view.centerYAnchor, constant: -64),
+            mainImage.widthAnchor.constraint(equalToConstant: 268 * 0.6),
+            mainImage.heightAnchor.constraint(equalToConstant: 344 * 0.6),
             mainImage.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
 //      добавление Label
